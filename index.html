@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #1d72b8;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #0c5a8e;
+        }
+        main {
+            margin: 20px;
+        }
+        #home {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        #home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        #home p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        #home img {
+            margin-top: 20px;
+            max-width: 150px;
+            border-radius: 50%;
+            border: 5px solid #1d72b8;
+        }
+        #projects {
+            margin-top: 50px;
+        }
+        #projects h2 {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            transition: transform 0.3s ease;
+        }
+        .project-item:hover {
+            transform: translateY(-5px);
+        }
+        .project-item h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project-item p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1d72b8;
+            color: white;
+            margin-top: 50px;
+        }
+        footer .contact-info {
+            margin-top: 20px;
+        }
+        footer .contact-info p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                width: calc(50% - 30px);
+            }
+        }
+        @media (max-width: 500px) {
+            .project-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a Web Developer with a passion for creating beautiful and functional websites.</p>
+            <img src="profile.jpg" alt="Profile Photo">
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Website for Wire Manufacturing Company</h3>
+                    <p>Built a tool to maintain a full-stack website with integrated frontend and backend functionalities for a wire manufacturing company, enhancing their online presence, data maintenance, and streamlining operations.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Crowdfunding Platform</h3>
+                    <p>Managed the creation of a crowdfunding website, making it feasible for people to raise money for their projects or enterprises, including startups and creative professionals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, please reach out through the following methods:</p>
+            <ul>
+                <li>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></li>
+                <li>Phone: (123) 456-7890</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:yashwanthganesh18gmail.com" style="color: white;">yashwanthganesh18gmail.com</a></p>
+            <p>Phone: <a href="tel:+1234567890" style="color: white;">(+91) 9148449606</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yashwanth-ganesh-710643257/" target="_blank" style="color: white;">https://www.linkedin.com/in/yashwanth-ganesh-710643257/</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
